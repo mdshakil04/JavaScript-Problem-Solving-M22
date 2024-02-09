@@ -1,3 +1,7 @@
 const marks = [12, 23, 23, 45, 34, 25, 67, 12]
+console.log("Original Array : ",marks)
 const arrSlice = marks.slice(3, 6);
-console.log(arrSlice);
+console.log("Sliced Array : ", arrSlice);
+const arrSplice = marks.splice(3, 4);
+console.log("Spliced Array",arrSplice);
+console.log("Remaining Array : ",marks)
