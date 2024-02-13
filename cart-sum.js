@@ -15,4 +15,4 @@ function sumCartItems(items){
     return sum;
 }
 const myCart = sumCartItems(phones);
-console.log("The total cost is " + myCart);
+console.log("The total cost is $" + myCart );
