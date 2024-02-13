@@ -6,24 +6,18 @@ const phones = [
     {name : "Techno", Camera: 64, Storage: "12gb", price: 5000},
     {name : "Realme", Camera: 12, Storage: "32gb", price: 25000}
 ];
-function cheapestPhone(phones){
+function cheapestSelector(phones){
     let cheapest = phones[0];
-    for(let i = 0; i < phones.length; i++){
-        const phone = phones[i]
+    for(let i = 0 ; i < phones.length; i ++){
+        const phone = phones[i];
         if(phone.price < cheapest.price){
             cheapest = phone;
         }
     }
-    return cheapest;
-};
-const mySelection = cheapestPhone(phones);
-console.log(mySelection.name)
+    return cheapest
+}
+const mySelection = cheapestSelector(phones);
+console.log(mySelection);
 
-// let cheapest = phones[0];
-//     for(let i = 0; i < phones.length; i ++){
-//         const phone = phones[i];
-//         if(phone.price < cheapest.price){
-//             cheapest = phone;
-//         }
-//     };
-//     return cheapest;
+
+
